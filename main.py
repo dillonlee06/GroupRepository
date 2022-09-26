@@ -21,6 +21,14 @@ def index():
 def stub():
     return render_template("stub.html")
 
+@app.route('/AMD/')  # connects /stub/ URL to stub() function
+def AMD():
+    return render_template("AgileMethologyDiagram.html")
+
+@app.route('/plan/')  # connects /stub/ URL to stub() function
+def plan():
+    return render_template("plan.html")
+
 # this runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)

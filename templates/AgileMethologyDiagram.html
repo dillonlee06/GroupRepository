@@ -1,7 +1,16 @@
-<div class="Agile-Methology-Diagram">
-    <h1>Agile Methology Diagram</h1>
-    <p>Derek contributed to the project by...</p>
-    <p>Dillon contributed to the project by...</p>
-    <p>Rohan contributed to the project by...</p>
-    <p>Saavan contributed to the project by...</p>
-</div>
+{% extends "layouts/base.html" %}
+{% set project = "AgileMethologyDiagram" %}
+
+{% block body %}
+    <!- Try building a new body here, bootstrap is a wise choice ->
+    <div class="px-5 py-5 mx-auto">
+        <h1 class="text-primary"><strong>About Us</strong></h1>
+        <p class="text-secondary">Derek contributed to the project by...</p>
+        <p class="text-secondary">Dillon contributed to the project by...</p>
+        <p class="text-secondary">Rohan contributed to the project by...</p>
+        <p class="text-secondary">Saavan contributed to the project by...</p>
+    </div>
+{% endblock %}
+
+{% block background %}
+{% endblock %}
