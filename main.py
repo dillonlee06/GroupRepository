@@ -29,6 +29,10 @@ def AMD():
 def plan():
     return render_template("plan.html")
 
+@app.route('/plan/')  # connects /stub/ URL to stub() function
+def plan():
+    return render_template("scrum.html")
+
 # this runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
