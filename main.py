@@ -29,7 +29,7 @@ def AMD():
 def plan():
     return render_template("plan.html")
 
-@app.route('/scrum/')  # connects /stub/ URL to stub() function
+@app.route('/scrum/')  # connects /scrum/ URL to scrum() function
 def scrum():
     return render_template("scrum.html")
 
