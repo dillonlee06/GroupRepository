@@ -29,8 +29,8 @@ def AMD():
 def plan():
     return render_template("plan.html")
 
-@app.route('/plan/')  # connects /stub/ URL to stub() function
-def plan():
+@app.route('/scrum/')  # connects /stub/ URL to stub() function
+def scrum():
     return render_template("scrum.html")
 
 # this runs the application on the development server
