@@ -1,7 +1,11 @@
 ## [Flask Portfolio Starter](https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter)
 Runtime link: https://portfolio.nighthawkcodingsociety.com/
 # Group Members: Saavan, Derek, Rohan, Dillon
-###This is our group project for this trimester. More information will be on this soon. 
+### This is our group project for this trimester. More information will be on this soon. 
+
+### We will make a website with the intention of showing the profiles of the most iconic players in sports
+
+### We need: a list of sports (drop down menu), Drop down menu shows a list of sports, you can choose which one you go to (soccer, baseball, football, basketball), pages should have a menu where you can click on an iconic player (both current and past), each profile will have career stats, teams, and iconic moments (photos and videos), we can add a brief biography about the player.
 ### Visual thoughts
 #### Organize with Bootstrap menu 
 #### Add some color and fun through VANTA Visuals (birds, halo, solar, net)
