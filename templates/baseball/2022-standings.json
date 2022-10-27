@@ -1,0 +1,42 @@
+function Team(name, record, percentage, differential, homers, BestPlayer) {
+    this.name = name;
+    this.record = record;
+    this.percentage = percentage;
+    this.differential = differential;
+    this.homers = homers;
+    this.BestPlayer = BestPlayer;
+    this.role = "";
+}
+
+Team.prototype.setRole = function(role) {
+    this.role = role;
+}
+
+Team.prototype.toJSON = function() {
+    const obj = {name: this.name, record: this.record, percentage: this.percentage, differential: this.differential, homers: this.homers, BestPlayer: this.BestPlayer, role: this.role};
+    const json = JSON.stringify(obj);
+    return json;
+}
+
+var al = new Team("Houston Astros", "106-56", ".654", "+219", "214", "Yordan Alvarez, Justin Verlander");
+LogItType(al);
+LogItType(al.toJSON());
+
+al.setRole("AL");
+LogItType(al);
+LogItType(al.toJSON());
+
+var teams = [
+    new Team("New York Yankees", "99-63", ".611", "+240", "Aaron Judge"),
+    new Team("Cleveland Guardians", "92-70", ".568", "+64", "Josh Naylor, Jose Ramirez"),
+    new Team("Toronto Blue Jays", "92-70", ".568", "+96", "Vladimir Guererro Jr, Bo Bichette"),
+    new Team("Seattle Mariners", "90-72", ".556"),
+    new Team("Ha-Seong Kim", "Shortstop", ".252"),
+    new Team("Brandon Drury", "First Base", ".226"),
+    new Team("Jorge Alfaro", "Catcher", ".249"),
+    new Team("Wil Myers", "Right Field, First Base", ".255"),
+    new Team("Juan Soto", "Right Field", ".242"),
+    new Team("Austin Nola", "Catcher", ".248"),
+    new Team("Josh Bell", "Designated Hitter, First Base", ".191"),
+    new Team("Jose Azocar", "Outfield", ".272"), 
+];
